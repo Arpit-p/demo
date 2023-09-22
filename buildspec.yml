@@ -1,9 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 16  # Specify a supported Node.js runtime version
     commands:
       - sudo apt-get update  # Update the package cache
       # You can add additional installation commands here if needed
