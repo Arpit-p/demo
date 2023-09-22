@@ -1,11 +1,9 @@
 version: 0.2
 
 phases:
-    commands:
-      - sudo apt-get update  # Update the package cache
-      # You can add additional installation commands here if needed
   pre_build:
     commands:
+      - sudo apt-get update  # Update the package cache
       - npm install
       # Add any pre-build commands here (e.g., installing global dependencies)
   build:
