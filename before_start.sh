@@ -1,4 +1,4 @@
-
+cd /node_app
 # Install Node.js dependencies using npm
 npm install
 
