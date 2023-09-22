@@ -3,24 +3,25 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Specify the Node.js version you want to use
+      nodejs: 16  # Specify a supported Node.js runtime version
     commands:
       - sudo apt-get update  # Update the package cache
       # You can add additional installation commands here if needed
   pre_build:
     commands:
-     - npm install
+      - npm install
       # Add any pre-build commands here (e.g., installing global dependencies)
   build:
     commands:
-    - npm install
-    - npm run build
-      # Add your build commands her e (e.g., npm install, npm run build, etc.)
-  post_build: 
-    commands: 
-     - sudo apt-get update
+      - npm install
+      - npm run build
+      # Add your build commands here (e.g., npm install, npm run build, etc.)
+  post_build:
+    commands:
+      - sudo apt-get update
       # Add any post-build commands here (e.g., running tests or packaging artifacts)
-     - npm start
+      - npm start
+
 artifacts:
   files:       # Specify files or directories to include in the build artifacts
-    - '*' 
+    - '*'
