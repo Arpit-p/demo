@@ -3,7 +3,6 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - sudo apt-get update  # Update the package cache
       - npm install
       # Add any pre-build commands here (e.g., installing global dependencies)
   build:
@@ -13,7 +12,6 @@ phases:
       # Add your build commands here (e.g., npm install, npm run build, etc.)
   post_build:
     commands:
-      - sudo apt-get update
       # Add any post-build commands here (e.g., running tests or packaging artifacts)
       - npm start
 
