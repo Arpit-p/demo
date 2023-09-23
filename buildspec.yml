@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16  # Specify a supported Node.js runtime version
+      Nodejs: 16  # Specify a supported Node.js runtime version
   pre_build:
     commands:
       - sudo yum update -y  # Update packages before the build
