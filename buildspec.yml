@@ -1,23 +1,23 @@
-version: 0.2
+# version: 0.2
 
-phases:
-  install:
-    runtime-versions:
-      Nodejs: 16  # Specify a supported Node.js runtime version
-  pre_build:
-    commands:
-      - sudo yum update -y  # Update packages before the build
-      # Add any other pre-build commands here (e.g., installing global dependencies)
-  build:
-    commands:
-      - npm install
-      - npm run build
-      # Add your build commands here (e.g., npm install, npm run build, etc.)
-  post_build:
-    commands:
-      # Add any post-build commands here (e.g., running tests or packaging artifacts)
-      - npm start
+# phases:
+#   install:
+#     runtime-versions:
+#       Nodejs: 16  # Specify a supported Node.js runtime version
+#   pre_build:
+#     commands:
+#       - sudo yum update -y  # Update packages before the build
+#       # Add any other pre-build commands here (e.g., installing global dependencies)
+#   build:
+#     commands:
+#       - npm install
+#       - npm run build
+#       # Add your build commands here (e.g., npm install, npm run build, etc.)
+#   post_build:
+#     commands:
+#       # Add any post-build commands here (e.g., running tests or packaging artifacts)
+#       - npm start
 
-artifacts:
-  files:
-    - '*'  # Specify files or directories to include in the build artifacts
+# artifacts:
+#   files:
+#     - '*'  # Specify files or directories to include in the build artifacts
