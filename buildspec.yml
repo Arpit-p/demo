@@ -18,6 +18,6 @@
 #       # Add any post-build commands here (e.g., running tests or packaging artifacts)
 #       - npm start
 
-# artifacts:
+#  #artifacts:
 #   files:
 #     - '*'  # Specify files or directories to include in the build artifacts
