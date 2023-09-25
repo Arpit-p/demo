@@ -3,12 +3,15 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-    nodejs: 16
+      nodejs: 16
+   
   pre_build:
-    commands: npm install
+    commands:
+      - npm install
+      # Add any other pre-build commands here (e.g., installing global dependencies)
   build:
     commands:
-      docker build -t demo-node-app .
+      - docker build -t demo-node-app .
       # Add your build commands here (e.g., npm install, npm run build, etc.)
   post_build:
     commands:
