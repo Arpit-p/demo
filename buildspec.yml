@@ -5,11 +5,6 @@ phases:
     commands:
       - docker build -t demo-node-app .
       # Add your build commands here (e.g., npm install, npm run build, etc.)
-  post_build:
-    commands:
-      # Add any post-build commands here (e.g., running tests or packaging artifacts)
-      - npm start
-
 artifacts:
   files: # Specify files or directories to include in the build artifacts
     - "*"
